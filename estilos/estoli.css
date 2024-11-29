@@ -1,0 +1,84 @@
+@charset "utf-8";
+body{background-image: url(../imagenes/fondocompu.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;}
+h1 {
+  font-family: "Acme", sans-serif;}
+ p{font-family: "Acme", sans-serif;}
+.contenedor , footer, header, .video{
+  margin: auto;
+}
+#logo img{width: 100px;}
+#logo {width: 20%;float: right;}
+nav {width: 80%;float: left;}
+header ul {list-style: none;}
+header{background: var(--fancy-gradient);
+       width: 90%;}
+li {float: left;
+color: white;
+text-transform: uppercase;
+}
+.clear {clear: both;
+  display: block;
+ }
+.contenedor{display: flex;}
+nav ul{ list-style:none;}
+nav li{ float:left; margin: 10px }
+nav a{ font-weight:600; text-decoration:none; text-transform:uppercase;}
+nav a:hover{ border-bottom:3px solid #148407;}
+	
+	body.contacto article input[type=text]:focus {
+  background-color: lightblue;
+}
+fieldset{ margin:10px 0; border-color:#D9FC00;}
+legend{ background:#D9FC00; color:#000; padding:4px;}
+
+/* pagina contacto */
+body.quienessomos article{ 
+  border: #E100C6;}
+p.quienessomos{color:#D9FC00 ;}
+#noticias{background: var(--fancy-gradient);}
+:root{
+  --fancy-gradient:Linear-gradient( to bottom, #00ef4c, #9d03d0 );;
+}
+video.quienessomos{float: none;}
+article span{color: white;}
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+}
+a.btn-wsp{background-color: white;}
+a.btn-wsp{
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.btn-wsp:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.botonimagen{
+  width: 80px;
+  transition: ease 1s;
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
